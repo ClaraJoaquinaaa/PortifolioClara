@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #5DADE2;
-    --dark-bg: #2C3E50;
-    --darker-bg: #1A252F;
-    --text-light: #ECF0F1;
+    --primary-color: #6AD5DC;
+    --dark-bg: #202020;
+    --darker-bg: #000000;
+    --text-light: #f4f4f4;
 }
 
 body {
@@ -93,6 +93,7 @@ body {
     font-weight: bold;
     margin-bottom: 2rem;
     color: var(--text-light);
+    text-align: end;
 }
 
 .btn-custom {
@@ -165,6 +166,10 @@ body {
     font-size: 4rem;
     color: var(--primary-color);
     opacity: 0.3;
+}
+
+.decorative-icon-image {
+    height: 60px;
 }
 
 @media (max-width: 768px) {
