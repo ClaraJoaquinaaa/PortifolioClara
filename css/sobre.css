@@ -260,6 +260,10 @@ body {
     opacity: 0.8;
 }
 
+.skills-card-imgs {
+    height: 45px;
+}
+
 @media (max-width: 768px) {
     .about-title {
         font-size: 2.5rem;
