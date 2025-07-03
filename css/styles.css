@@ -14,6 +14,14 @@ body {
 .navbar-custom {
     background-color: var(--darker-bg);
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
 }
 
 .navbar-custom .navbar-nav .nav-link {
