@@ -103,7 +103,7 @@ body {
 
 .btn-custom {
     background-color: var(--primary-color);
-    color: white;
+    color: #1E1E1E;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -113,9 +113,9 @@ body {
 }
 
 .btn-custom:hover {
-    background-color: #4A90E2;
+    background-color: #004E54;
     transform: translateY(-2px);
-    color: white;
+    color: #f4f4f4;
 }
 
 .footer-section {
