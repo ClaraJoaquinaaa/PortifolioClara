@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim - Clara Joaquina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        .about-section {
+            background-color: var(--dark-bg);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .decorative-icons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .decorative-x {
+            height: 20px;
+            opacity: 0.6;
+        }
+
+        .about-title {
+            color: var(--primary-color);
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .job-title {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-description {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .job-contribution {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .skills-card {
+            background-color: var(--darker-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .skills-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .skill-name {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .skill-bar {
+            width: 60%;
+            height: 4px;
+            background-color: #333;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .tools-icons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .figma-icon {
+            background-color: #F24E1E;
+            color: white;
+        }
+
+        .ps-icon {
+            background-color: #31A8FF;
+            color: white;
+        }
+
+        .ai-icon {
+            background-color: #FF9A00;
+            color: white;
+        }
+
+        .course-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .course-status {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .course-title {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-year {
+            color: var(--primary-color);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .course-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .about-title {
+                font-size: 2.5rem;
+            }
+            
+            .skills-card {
+                padding: 1.5rem;
+            }
+            
+            .skill-bar {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projetos.html">Meus projetos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Decorative Icons -->
+                    <div class="decorative-icons">
+                        <img src="images/xicon.png" class="decorative-x" alt="X">
+                        <img src="images/xicon.png" class="decorative-x" alt="X">
+                        <img src="images/xicon.png" class="decorative-x" alt="X">
+                    </div>
+
+                    <!-- About Title -->
+                    <h1 class="about-title">Sobre mim</h1>
+
+                    <!-- Experience Section -->
+                    <div class="mb-5">
+                        <h2 class="section-title">Minha experiência</h2>
+                        <p class="about-text">
+                            UX/UI Designer com mais de 4 anos de experiência em design de interfaces digitais. Especializada em transformar ideias em soluções visuais intuitivas e funcionais, tenho trabalhado em projetos que vão desde aplicativos móveis até sistemas corporativos complexos. Acredito que o design começa com a escuta e termina com a experiência.
+                        </p>
+                        <p class="highlight-text">
+                            Implementar design em um projeto não é apenas deixar uma tela ou imagem bonita. Acredito que se deve inovar na hora e de transmitir uma informação, utilizando o Design como um reorganizador de ideias e estilos.
+                        </p>
+                    </div>
+
+                    <!-- Latest Work Section -->
+                    <div class="mb-5">
+                        <h2 class="section-title">Últimos trabalhos</h2>
+                        
+                        <div class="mb-4">
+                            <p class="job-title">Designer Gráfico | Boaonda (2025)</p>
+                            <p class="job-description">
+                                Atuei na criação de materiais gráficos para a equipe de marketing, desenvolvendo campanhas publicitárias, conteúdos para redes sociais e design de interfaces para o e-commerce da empresa. Utilizei Adobe Photoshop e Illustrator, sempre alinhando o visual à identidade da marca e otimizando a experiência do usuário.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="job-title">UX/UI Designer | ZappCode (2021 - Atual)</p>
+                            <p class="job-description">
+                                Desenvolvi protótipos de alta fidelidade para produtos digitais, alinhados aos princípios de UX, resultando em interfaces intuitivas e atrativas.
+                            </p>
+                            <p class="job-contribution">
+                                Contribuí para o aumento da retenção de usuários por meio de melhorias no design de interação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- UX Skills Card -->
+                    <div class="skills-card">
+                        <h3 class="skills-title">Habilidades UX</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Design Thinking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">User Research</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Wireframes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UX Writing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Card -->
+                    <div class="skills-card">
+                        <h3 class="skills-title">Ferramentas</h3>
+                        <div class="tools-icons">
+                            <div class="tool-icon figma-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="tool-icon ps-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="tool-icon ai-icon">
+                                <i class="fas fa-vector-square"></i>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Illustrator</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vs Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Courses Card -->
+                    <div class="skills-card">
+                        <h3 class="skills-title">Cursos e Formação</h3>
+                        
+                        <div class="course-item">
+                            <p class="course-status">Atualmente cursando</p>
+                            <p class="course-title">User Experience e Design Digital</p>
+                        </div>
+
+                        <div class="course-item">
+                            <p class="course-year">2025</p>
+                            <p class="course-description">Criando Interfaces de Aplicativos com o Figma - Crie 8 Apps</p>
+                        </div>
+
+                        <div class="course-item">
+                            <p class="course-year">2024</p>
+                            <p class="course-description">Aprenda Vue.js do zero - Udemy</p>
+                        </div>
+
+                        <div class="course-item">
+                            <p class="course-year">2023</p>
+                            <p class="course-description">UX Design de A a Z: tudo sobre experiência do usuário - Udemy</p>
+                        </div>
+
+                        <div class="course-item">
+                            <p class="course-year">2023</p>
+                            <p class="course-description">Curso Completo de Figma UX UI Design do básico ao avançado - Udemy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <h3 class="footer-title">Entre em contato</h3>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/clara-joaquina-526504242/" target="_blank" class="contact-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:clarajoaquina33@gmail.com" class="contact-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://w.app/90ieot" target="_blank" class="contact-icon" title="Whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <p class="footer-credit">Desenvolvido por Clara Joaquina</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
