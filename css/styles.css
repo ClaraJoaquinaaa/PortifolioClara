@@ -47,15 +47,21 @@ body {
     color: var(--text-light);
 }
 
-.hero-description {
-    font-size: 1.1rem;
+.hero-description-top {
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 2rem;
-    color: #BDC3C7;
+    color: #f4f4f4;
+}
+.hero-description-bottom {
+    font-size: 20x;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #6AD5DC;
 }
 
 .profile-img {
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -85,11 +91,10 @@ body {
 
 .cta-section {
     text-align: center;
-    margin-top: 3rem;
 }
 
 .cta-title {
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 2rem;
     color: var(--text-light);
@@ -103,7 +108,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
