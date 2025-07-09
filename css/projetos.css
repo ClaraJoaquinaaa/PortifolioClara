@@ -220,12 +220,13 @@ body {
     padding: 0;
 }
 
-.projects-sidebar {
-    background-color: var(--darker-bg);
-    padding: 4rem 2rem;
-    min-height: 80vh;
+.projects-sidebar {background-color: #000;
+    padding: 6rem 2rem;
+    min-height: 54vh;
     display: flex;
     align-items: center;
+    border-radius: 12px;
+    margin: 15px;
 }
 
 .sidebar-content {
